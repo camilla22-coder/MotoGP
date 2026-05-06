@@ -1,0 +1,42 @@
+---
+title: "MotoGP Dissertation"
+author: "Camilla Piccione"
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(hyper2)
+library("magrittr")
+```
+
+## MotoGP
+
+
+
+```{r cars}
+MotoGP2023 <- read.delim("C:/Users/User/Desktop/Tesi master/MotoGP2023.txt")
+head( MotoGP2023)
+
+MotoGP2024 <- read.delim("C:/Users/User/Desktop/Tesi master/MotoGP2024.txt")
+
+MotoGP2025 <- read.delim("C:/Users/User/Desktop/Tesi master/MotoGP2025.txt")
+```
+
+
+
+```{r pressure, echo=FALSE}
+
+
+```
+
+```{r cars1}
+sprint_cols <- grep("^S\\.", names(MotoGP2025), value = TRUE)
+
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
