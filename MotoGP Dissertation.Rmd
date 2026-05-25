@@ -11,6 +11,9 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 library(hyper2)
 library("magrittr")
+library(dplyr)
+library(tidyr)
+library(ggplot2)
 ```
 
 ## MotoGP
@@ -18,23 +21,135 @@ library("magrittr")
 
 
 ```{r cars}
-MotoGP2023 <- read.delim("C:/Users/User/Desktop/Tesi master/MotoGP2023.txt")
-head( MotoGP2023)
+MotoGP2025_Race <- read.delim("C:/Users/User/Desktop/Tesi master/MototGP/Data txt/MotoGP2025_Race.txt")
 
-MotoGP2024 <- read.delim("C:/Users/User/Desktop/Tesi master/MotoGP2024.txt")
+MotoGP2025_Sprint <- read.delim("C:/Users/User/Desktop/Tesi master/MototGP/Data txt/MotoGP2025_Sprint.txt")
 
-MotoGP2025 <- read.delim("C:/Users/User/Desktop/Tesi master/MotoGP2025.txt")
+
+MotoGP2024_Race <- read.delim("C:/Users/User/Desktop/Tesi master/MototGP/Data txt/MotoGP2024_Race.txt")
+
+MotoGP2024_Sprint <- read.delim("C:/Users/User/Desktop/Tesi master/MototGP/Data txt/MotoGP2024_Sprint.txt")
 ```
 
 
 
 ```{r pressure, echo=FALSE}
+head(MotoGP2025_Sprint)
 
+top5_sprint <- MotoGP2025_Sprint %>%
+  slice(1:5) %>%
+  pivot_longer(
+    cols = S.THA:S.VAL,
+    names_to = "Sprint_Race",
+    values_to = "Result"
+  ) %>%
+  mutate(
+    Position = as.numeric(Result),
+    Sprint_Race = factor(Sprint_Race, levels = names(MotoGP2025_Sprint)[5:26])
+  )
+
+ggplot(top5_sprint, aes(x = Sprint_Race, y = Position, colour = Rider, group = Rider)) +
+  geom_line() +
+  geom_point(size = 2) +
+  scale_y_reverse() +
+  labs(
+    title = "Top 5 Riders Sprint Race Performance 2025",
+    x = "Sprint Race",
+    y = "Finishing Position",
+    colour = "Rider"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 ```
 
 ```{r cars1}
-sprint_cols <- grep("^S\\.", names(MotoGP2025), value = TRUE)
+head(MotoGP2025_Race)
+top5_race <- MotoGP2025_Race %>%
+  slice(1:5) %>%
+  pivot_longer(
+    cols = THA:VAL,
+    names_to = "Race",
+    values_to = "Result"
+  ) %>%
+  mutate(
+    Position = as.numeric(Result),
+    Race = factor(Race, levels = names(MotoGP2025_Race)[5:26])
+  )
+
+ggplot(top5_race, aes(x = Race, y = Position, colour = Rider, group = Rider)) +
+  geom_line() +
+  geom_point(size = 2) +
+  scale_y_reverse() +
+  labs(
+    title = "Top 5 Riders Race Performance 2025",
+    x = "Race",
+    y = "Finishing Position",
+    colour = "Rider"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+## MotoGP 2024
+
+```{r cars2}
+head(MotoGP2024_Sprint)
+
+top5_sprint24 <- MotoGP2024_Sprint %>%
+  slice(1:5) %>%
+  pivot_longer(
+    cols = S.QAT:S.SLD,
+    names_to = "Sprint_Race24",
+    values_to = "Result"
+  ) %>%
+  mutate(
+    Position = as.numeric(Result),
+    Sprint_Race24 = factor(Sprint_Race24, levels = names(MotoGP2024_Sprint)[5:24])
+  )
+
+ggplot(top5_sprint24, aes(x = Sprint_Race24, y = Position, colour = Rider, group = Rider)) +
+  geom_line() +
+  geom_point(size = 2) +
+  scale_y_reverse() +
+  labs(
+    title = "Top 5 Riders Sprint Race Performance 2024",
+    x = "Sprint Race",
+    y = "Finishing Position",
+    colour = "Rider"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+```{r cars3}
+head(MotoGP2024_Race)
+
+top5_race24 <- MotoGP2024_Race %>%
+  slice(1:5) %>%
+  pivot_longer(
+    cols = QAT:SLD,
+    names_to = "Race",
+    values_to = "Result"
+  ) %>%
+  mutate(
+    Position = as.numeric(Result),
+    Race = factor(Race, levels = names(MotoGP2024_Race)[5:24])
+  )
+
+ggplot(top5_race24, aes(x = Race, y = Position, colour = Rider, group = Rider)) +
+  geom_line() +
+  geom_point(size = 2) +
+  scale_y_reverse() +
+  labs(
+    title = "Top 5 Riders Race Performance 2024",
+    x = "Race",
+    y = "Finishing Position",
+    colour = "Rider"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
 
 
 ```
