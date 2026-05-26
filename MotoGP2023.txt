@@ -1,0 +1,21 @@
+Positon	Rider 	Bike 	Team 	S. POR	POR	S.ARG	ARG	S.AME	AME	S.SPA	SPA	S.FRA	FRA	S.ITA	ITA	S.GER	GER	S.NED	NED	S.GBR	GBR	S.AUT	AUT	S.CAT	CAT	S.RSM	RSM	S.IND	IND	S.JPN	JPN	S.INA	INA	S.AUS	AUS	S.THA	THA	S.MAL	MAL	S.QAT	QAT	S.VAL	VAL	Pts
+1	Bagnaia	Ducati	Ducati Lenovo Team	1	1	6	16	1	Ret	2	1	3	Ret	1	1	2	2	2	1	14	2	1	1	2	DNS	3	3	2	Ret	3	2	8	1	Cancelled	2	7	2	3	3	5	2	5	1	467
+2	Martin	Ducati	Prima Pramac Racing	2	Ret	8	5	3	Ret	4	4	1	2	3	2	1	1	6	5	6	6	3	7	5	3	1	1	1	2	1	1	1	Ret	Cancelled	5	1	1	2	4	1	10	1	Ret	428
+3	Bezzecchi	Ducati	Mooney VR46 Racing Team	Ret	3	2	1	6	6	9	Ret	7	1	2	8	7	4	1	2	2	Ret	Ret	3	8	12	2	2	5	1	6	4	3	5	Cancelled	6	6	4	7	6	13	13	7	Ret	329
+4	Binder	KTM	Red Bull KTM Factory Racing	12	6	1	17	5	13	1	2	2	6	11	5	6	Ret	5	4	9	3	2	2	4	Ret	5	14	4	4	2	Ret	19	6	Cancelled	4	2	3	5	Ret	7	5	2	3	293
+5	Zarco	Ducati	Prima Pramac Racing	8	4	12	2	11	7	8	Ret	6	3	4	3	5	3	13	Ret	4	9	Ret	13	7	4	14	10	Ret	6	5	NC	12	Ret	Cancelled	1	9	10	8	12	10	12	9	2	225
+6	A.Espargaro	Aprilia	Aprilia Racing	6	9	Ret	15	4	Ret	Ret	5	8	5	8	6	9	16	4	3	5	1	7	9	1	1	8	12	Ret	Ret	Ret	5	Ret	10	Cancelled	8	5	8	12	Ret	Ret	Ret	13	8	206
+7	Vinales	Aprilia	Aprilia Racing	5	2	7	12	10	4	7	Ret	9	Ret	13	12	Ret	Ret	7	Ret	3	5	8	6	3	2	6	5	8	8	9	19	4	2	Cancelled	11	18	Ret	10	11	6	4	4	10	204
+8	Marini	Ducati	Mooney VR46 Racing Team	Ret	Ret	3	8	7	2	10	6	4	Ret	5	4	4	5	10	7	11	7	Ret	4	12	11	7	9	Ret	DNS	DNP	DNP	2	Ret	Cancelled	12	3	7	9	10	3	3	17	9	201
+9	A.Marquez	Ducati	Gresini Racing MotoGP	9	5	5	3	Ret	Ret	Ret	8	15	Ret	Ret	Ret	8	7	9	6	1	Ret	4	5	10	6	9	11	DNS	DNS	DNP	DNP	DNS	DNS	Cancelled	9	8	Ret	1	2	4	6	8	6	177
+10	Quartararo	Yamaha	Monster Energy Yamaha MotoGP	10	8	9	7	19	3	20	10	Ret	7	10	11	13	13	3	Ret	21	15	15	8	18	7	13	13	6	3	15	10	5	3	Cancelled	14	11	5	16	5	8	7	Ret	11	172
+11	Miller	KTM	Red Bull KTM Factory Racing	4	7	10	6	9	Ret	3	3	Ret	Ret	6	7	3	6	11	Ret	7	8	5	15	16	8	15	Ret	7	14	4	6	9	7	Cancelled	7	10	16	6	8	12	9	12	Ret	163
+12	Di Ginnantonio	Ducati	Gresini Racing MotoGP	16	Ret	13	10	17	9	11	12	12	8	14	14	12	9	Ret	Ret	13	13	11	17	13	10	17	17	10	Ret	8	8	6	4	Cancelled	3	Ret	9	13	9	2	1	6	4	151
+13	Morbidelli	Yamaha	Monster Energy Yamaha MotoGP	14	14	4	4	14	8	16	11	13	10	16	10	15	12	15	9	15	14	9	11	15	14	18	15	15	7	16	17	15	14	Cancelled	17	15	11	11	7	15	16	18	7	102
+14	M.Marquez	Honda	Repsol Honda Team	3	Ret	DNP	DNP	DNP	DNP	DNP	DNP	5	Ret	7	Ret	11	DNS	17	DNS	18	Ret	10	12	11	13	10	7	3	9	7	3	Ret	Ret	Cancelled	15	4	6	21	13	11	11	3	Ret	96
+15	Bastianini	Ducati	Ducati Lenovo Team	Ret	DNS	DNP	DNP	DNP	DNP	DNS	DNS	DNP	DNP	9	9	10	8	8	Ret	13	Ret	13	10	9	DNS	DNP	DNP	DNP	DNP	DNP	DNP	7	8	Cancelled	10	13	13	4	1	20	8	15	Ret	84
+16	Oliveira	Aprilia	CryptoData RNF MotoGP Team	7	Ret	DNP	DNP	8	5	5	Ret	DNP	DNP	12	Ret	16	10	19	Ret	10	4	Ret	Ret	6	5	12	6	12	12	14	18	10	12	Cancelled	13	17	Ret	18	Ret	Ret	DNS	DNP	DNP	76
+17	A.Fernandez	KTM	GasGas Factory Racing Tech3	Ret	13	16	11	16	10	17	13	Ret	4	20	15	14	11	14	10	8	11	17	14	17	9	19	16	11	Ret	12	7	13	Ret	Cancelled	Ret	Ret	17	14	14	9	15	10	Ret	71
+18	Nakagami	Honda	LCR Honda Idemitsu	15	12	11	13	13	Ret	Ret	9	10	9	17	13	17	14	12	8	20	16	Ret	18	20	15	21	19	13	11	17	11	11	11	Cancelled	19	19	14	19	18	18	19	16	12	56
+19	Rins	Honda	LCR Honda Castrol	13	10	15	9	2	1	13	Ret	11	Ret	Ret	DNS	DNP	DNP	DNP	DNP	DNP	DNP	DNP	DNP	DNP	DNP	DNP	DNP	DNP	DNP	WD	WD	18	9	Cancelled	DNS	DNP	DNP	DNP	DNP	DNP	DNP	19	Ret	54
+20	R.Fernandez	Aprilia	CryptoData RNF MotoGP Team	11	Ret	14	14	15	Ret	14	15	DNS	WD	19	17	18	15	18	12	19	10	14	Ret	14	Ret	11	8	9	10	10	9	14	13	Cancelled	16	14	15	17	Ret	14	17	11	5	51

@@ -10,30 +10,37 @@ output:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 library(hyper2)
-library("magrittr")
+library(magrittr)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
+library(readr)
+
 ```
 
 ## MotoGP
 
 
 
-```{r cars}
-MotoGP2025_Race <- read.delim("C:/Users/User/Desktop/Tesi master/MototGP/Data txt/MotoGP2025_Race.txt")
+```{r }
+MotoGP2025_Race <- read_table("MotoGP2025_Race.txt")
+MotoGP2025_Sprint <- read_table("MotoGP2025_Sprint.txt")
 
-MotoGP2025_Sprint <- read.delim("C:/Users/User/Desktop/Tesi master/MototGP/Data txt/MotoGP2025_Sprint.txt")
+
+MotoGP2024_Race <- read_table("MotoGP2024_Race.txt")
+MotoGP2024_Sprint <- read_table("MotoGP2024_Sprint.txt")
 
 
-MotoGP2024_Race <- read.delim("C:/Users/User/Desktop/Tesi master/MototGP/Data txt/MotoGP2024_Race.txt")
+MotoGP2023_Race <- read_table("MotoGP2023_Race.txt")
+MotoGP2023_Sprint <- read_table("MotoGP2023_Sprint.txt")
 
-MotoGP2024_Sprint <- read.delim("C:/Users/User/Desktop/Tesi master/MototGP/Data txt/MotoGP2024_Sprint.txt")
 ```
 
+## MotoGP2025
 
+### Sprint Race 25 
 
-```{r pressure, echo=FALSE}
+```{r cars1}
 head(MotoGP2025_Sprint)
 
 top5_sprint <- MotoGP2025_Sprint %>%
@@ -45,7 +52,7 @@ top5_sprint <- MotoGP2025_Sprint %>%
   ) %>%
   mutate(
     Position = as.numeric(Result),
-    Sprint_Race = factor(Sprint_Race, levels = names(MotoGP2025_Sprint)[5:26])
+    Sprint_Race = factor(Sprint_Race, levels = names(MotoGP2025_Sprint)[4:25])
   )
 
 ggplot(top5_sprint, aes(x = Sprint_Race, y = Position, colour = Rider, group = Rider)) +
@@ -63,7 +70,10 @@ ggplot(top5_sprint, aes(x = Sprint_Race, y = Position, colour = Rider, group = R
 
 ```
 
-```{r cars1}
+
+### Race 2025
+
+```{r cars2}
 head(MotoGP2025_Race)
 top5_race <- MotoGP2025_Race %>%
   slice(1:5) %>%
@@ -74,7 +84,7 @@ top5_race <- MotoGP2025_Race %>%
   ) %>%
   mutate(
     Position = as.numeric(Result),
-    Race = factor(Race, levels = names(MotoGP2025_Race)[5:26])
+    Race = factor(Race, levels = names(MotoGP2025_Race)[4:25])
   )
 
 ggplot(top5_race, aes(x = Race, y = Position, colour = Rider, group = Rider)) +
@@ -90,10 +100,85 @@ ggplot(top5_race, aes(x = Race, y = Position, colour = Rider, group = Rider)) +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
+
 ```
+
+
+## Analysis of the race 2025
+
+
+
+```{r,applydata}
+
+moto_2025<-read.table("GP_2025.txt")
+M_M <- moto_2025[1:20,1:36]
+
+
+L2025M<-ordertable2supp(M_M)
+head(L2025M)
+
+moto_maxp_M <- maxp(L2025M)
+moto_maxp_M
+```
+
+
+```{r,applydata}
+L2025<- ordertable2supp(moto_2025[2:20,-ncol(moto_2025)])
+head(L2025)
+
+
+moto_maxp <- maxp(L2025)
+moto_maxp
+
+```
+
+```{r cars3}
+
+
+dotchart(moto_maxp_M,pch=16)
+dotchart(moto_maxp,pch=16)
+
+
+```
+
+
+
+
+```{r cars4}
+
+
+dotchart(log10(moto_maxp_M),pch=16)
+
+dotchart(log10(moto_maxp),pch=16)
+
+
+
+```
+
+
+##new code hyper2
+
+
+```{r,applydata1}
+
+moto_2025_1<-read.table("GP_20251.txt")
+
+
+
+L2025N<-ordertable2supp(moto_2025_1[, -ncol(moto_2025_1)], noninformative='DNP')
+head(L2025N)
+
+
+
+moto_maxp_N <- maxp(L2025N)
+moto_maxp_N
+
+```
+
+
 ## MotoGP 2024
 
-```{r cars2}
+```{r cars5}
 head(MotoGP2024_Sprint)
 
 top5_sprint24 <- MotoGP2024_Sprint %>%
@@ -105,7 +190,7 @@ top5_sprint24 <- MotoGP2024_Sprint %>%
   ) %>%
   mutate(
     Position = as.numeric(Result),
-    Sprint_Race24 = factor(Sprint_Race24, levels = names(MotoGP2024_Sprint)[5:24])
+    Sprint_Race24 = factor(Sprint_Race24, levels = names(MotoGP2024_Sprint)[4:23])
   )
 
 ggplot(top5_sprint24, aes(x = Sprint_Race24, y = Position, colour = Rider, group = Rider)) +
@@ -122,22 +207,22 @@ ggplot(top5_sprint24, aes(x = Sprint_Race24, y = Position, colour = Rider, group
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-```{r cars3}
+```{r cars6}
 head(MotoGP2024_Race)
 
 top5_race24 <- MotoGP2024_Race %>%
   slice(1:5) %>%
   pivot_longer(
     cols = QAT:SLD,
-    names_to = "Race",
+    names_to = "Race24",
     values_to = "Result"
   ) %>%
   mutate(
     Position = as.numeric(Result),
-    Race = factor(Race, levels = names(MotoGP2024_Race)[5:24])
+    Race24 = factor(Race24, levels = names(MotoGP2024_Race)[4:23])
   )
 
-ggplot(top5_race24, aes(x = Race, y = Position, colour = Rider, group = Rider)) +
+ggplot(top5_race24, aes(x = Race24, y = Position, colour = Rider, group = Rider)) +
   geom_line() +
   geom_point(size = 2) +
   scale_y_reverse() +
@@ -153,5 +238,235 @@ ggplot(top5_race24, aes(x = Race, y = Position, colour = Rider, group = Rider)) 
 
 
 ```
+
+
+
+
+```{r cars7}
+moto_2024<-read.table("GP_2024.txt")
+
+L2024<- ordertable2supp(moto_2024[1:20,-ncol(moto_2024)])
+head(L2024)
+
+moto_maxp24 <- maxp(L2024)
+moto_maxp24
+
+```
+
+
+
+
+```{r cars8}
+
+
+dotchart(moto_maxp24,pch=16)
+
+
+
+```
+
+
+```{r cars9}
+
+dotchart(log10(moto_maxp24),pch=16)
+
+
+
+```
+
+#### Difference in Rider Performance Between Sprint and Race
+
+
+```{r cars10}
+
+Sprint24 <-read.table("Sprint_2024.txt")
+
+L_Sprint24 <- ordertable2supp(Sprint24[1:20,])
+head(L_Sprint24)
+
+sprint_maxp24 <- maxp(L_Sprint24)
+sprint_maxp24
+
+dotchart(sprint_maxp24,pch=16)
+
+dotchart(log10(sprint_maxp24),pch=16)
+```
+```{r cars11}
+
+Race24 <-read.table("Race_2024.txt")
+
+L_Race24 <- ordertable2supp(Race24[1:20,])
+head(L_Race24)
+
+race_maxp24 <- maxp(L_Race24)
+race_maxp24
+
+dotchart(race_maxp24,pch=16)
+
+dotchart(log10(race_maxp24),pch=16)
+```
+
+
+
+
+##MotoGP2023
+
+```{r cars12}
+head(MotoGP2023_Sprint)
+
+top5_sprint23 <- MotoGP2023_Sprint %>%
+  slice(1:5) %>%
+  pivot_longer(
+    cols = S.POR:S.VAL,
+    names_to = "Sprint_Race23",
+    values_to = "Result"
+  ) %>%
+  mutate(
+    Position = as.numeric(Result),
+    Sprint_Race23 = factor(Sprint_Race23, levels = names(MotoGP2023_Sprint)[4:23])
+  )
+
+ggplot(top5_sprint23, aes(x = Sprint_Race23, y = Position, colour = Rider, group = Rider)) +
+  geom_line() +
+  geom_point(size = 2) +
+  scale_y_reverse() +
+  labs(
+    title = "Top 5 Riders Sprint Race Performance 2023",
+    x = "Sprint Race",
+    y = "Finishing Position",
+    colour = "Rider"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+
+
+```
+
+
+
+
+```{r cars13}
+head(MotoGP2023_Race)
+
+top5_race23 <- MotoGP2023_Race %>%
+  slice(1:5) %>%
+  pivot_longer(
+    cols = POR:VAL,
+    names_to = "Race23",
+    values_to = "Result"
+  ) %>%
+  mutate(
+    Position = as.numeric(Result),
+    Race23 = factor(Race23, levels = names(MotoGP2023_Race)[4:23])
+  )
+
+ggplot(top5_race23, aes(x = Race23, y = Position, colour = Rider, group = Rider)) +
+  geom_line() +
+  geom_point(size = 2) +
+  scale_y_reverse() +
+  labs(
+    title = "Top 5 Riders Race Performance 2023",
+    x = "Race",
+    y = "Finishing Position",
+    colour = "Rider"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+
+
+```
+
+
+
+```{r cars14}
+moto_2023<-read.table("GP_2023.txt")
+
+L2023<- ordertable2supp(moto_2023[1:20,-ncol(moto_2023)])
+head(L2023)
+
+moto_maxp23 <- maxp(L2023)
+moto_maxp23
+
+
+
+
+```
+
+
+```{r cars15}
+
+dotchart(moto_maxp23,pch=16)
+
+
+
+```
+
+
+```{r cars16 }
+
+dotchart(log10(moto_maxp23),pch=16)
+
+
+
+```
+
+
+
+#### Difference in Rider Performance Between Sprint and Race 2023
+
+
+```{r cars17}
+
+Sprint23 <-read.table("Sprint_2023.txt")
+
+L_Sprint23 <- ordertable2supp(Sprint23[1:20,])
+head(L_Sprint23)
+
+sprint_maxp23 <- maxp(L_Sprint23)
+sprint_maxp23
+
+dotchart(sprint_maxp23,pch=16)
+
+dotchart(log10(sprint_maxp23),pch=16)
+```
+
+
+
+
+```{r cars18}
+
+Race23 <-read.table("Race_2023.txt")
+
+L_Race23 <- ordertable2supp(Race23[1:20,])
+head(L_Race23)
+
+race_maxp23 <- maxp(L_Race23)
+race_maxp23
+
+dotchart(race_maxp23,pch=16)
+
+dotchart(log10(race_maxp23),pch=16)
+```
+
+
+## Ducati 
+
+
+### 2025
+
+
+
+```{r cars18}
+
+factory25 <-read.table("Factory_2025.txt")
+
+
+```
+
+
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

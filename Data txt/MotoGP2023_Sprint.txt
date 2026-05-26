@@ -1,0 +1,21 @@
+Rider	Bike	Team	S. POR	S.ARG	S.AME	S.SPA	S.FRA	S.ITA	S.GER	S.NED	S.GBR	S.AUT	S.CAT	S.RSM	S.IND	S.JPN	S.INA	S.AUS	S.THA	S.MAL	S.QAT	S.VAL
+Bagnaia	Ducati	DucatiLenovoTeam	1	6	1	2	3	1	2	2	14	1	2	3	2	3	8	Cancelled	7	3	5	5
+Martin	Ducati	PrimaPramacRacing	2	8	3	4	1	3	1	6	6	3	5	1	1	1	1	Cancelled	1	2	1	1
+Bezzecchi	Ducati	MooneyVR46RacingTeam	Ret	2	6	9	7	2	7	1	2	Ret	8	2	5	6	3	Cancelled	6	7	13	7
+Binder	KTM	RedBullKTMFactoryRacing	12	1	5	1	2	11	6	5	9	2	4	5	4	2	19	Cancelled	2	5	7	2
+Zarco	Ducati	PrimaPramacRacing	8	12	11	8	6	4	5	13	4	Ret	7	14	Ret	5	12	Cancelled	9	8	10	9
+A.Espargaro	Aprilia	ApriliaRacing	6	Ret	4	Ret	8	8	9	4	5	7	1	8	Ret	Ret	Ret	Cancelled	5	12	Ret	13
+Vinales	Aprilia	ApriliaRacing	5	7	10	7	9	13	Ret	7	3	8	3	6	8	9	4	Cancelled	18	10	6	4
+Marini	Ducati	MooneyVR46RacingTeam	Ret	3	7	10	4	5	4	10	11	Ret	12	7	Ret	DNP	2	Cancelled	3	9	3	17
+A.Marquez	Ducati	GresiniRacingMotoGP	9	5	Ret	Ret	15	Ret	8	9	1	4	10	9	DNS	DNP	DNS	Cancelled	8	1	4	8
+Quartararo	Yamaha	MonsterEnergyYamahaMotoGP	10	9	19	20	Ret	10	13	3	21	15	18	13	6	15	5	Cancelled	11	16	8	Ret
+Miller	KTM	RedBullKTMFactoryRacing	4	10	9	3	Ret	6	3	11	7	5	16	15	7	4	9	Cancelled	10	6	12	12
+DiGinnantonio	Ducati	GresiniRacingMotoGP	16	13	17	11	12	14	12	Ret	13	11	13	17	10	8	6	Cancelled	Ret	13	2	6
+Morbidelli	Yamaha	MonsterEnergyYamahaMotoGP	14	4	14	16	13	16	15	15	15	9	15	18	15	16	15	Cancelled	15	11	15	18
+M.Marquez	Honda	RepsolHondaTeam	3	DNP	DNP	DNP	5	7	11	17	18	10	11	10	3	7	Ret	Cancelled	4	21	11	3
+Bastianini	Ducati	DucatiLenovoTeam	Ret	DNP	DNP	DNS	DNP	9	10	8	13	13	9	DNP	DNP	DNP	7	Cancelled	13	4	20	15
+Oliveira	Aprilia	CryptoDataRNFMotoGPTeam	7	DNP	8	5	DNP	12	16	19	10	Ret	6	12	12	14	10	Cancelled	17	18	Ret	DNP
+A.Fernandez	KTM	GasGasFactoryRacingTech3	Ret	16	16	17	Ret	20	14	14	8	17	17	19	11	12	13	Cancelled	Ret	14	9	10
+Nakagami	Honda	LCRHondaIdemitsu	15	11	13	Ret	10	17	17	12	20	Ret	20	21	13	17	11	Cancelled	19	19	18	16
+Rins	Honda	LCRHondaCastrol	13	15	2	13	11	Ret	DNP	DNP	DNP	DNP	DNP	DNP	DNP	WD	18	Cancelled	DNP	DNP	DNP	19
+R.Fernandez	Aprilia	CryptoDataRNFMotoGPTeam	11	14	15	14	DNS	19	18	18	19	14	14	11	9	10	14	Cancelled	14	17	14	11

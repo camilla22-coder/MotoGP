@@ -1,0 +1,21 @@
+Position	Rider	Bike	Team	S.QAT	QAT	S.POR	POR	S.AME	AME	S.SPA	SPA	S.FRA	FRA	S.CAT	CAT	S.ITA	ITA	S.NED	NED	S.GER	GER	S.GBR	GBR	S.AUT	AUT	S.ARA	ARA	S.RSM	RSM	S.EMI	EMI	S.INA	INA	S.JPN	JPN	S.AUS	AUS	S.THA	THA	S.MAL	MAL	S.SLD	SLD	Pts
+1	Martin	Ducati	Prima Pramac Racing	1	3	3	1	3	4	1	Ret	1	1	4	2	Ret	3	2	2	1	Ret	2	2	2	2	2	2	1	15	2	2	10	1	4	2	1	2	2	2	1	2	3	3	508
+2	Bagnaia	Ducati	Ducati Lenovo Team	4	1	4	Ret	8	5	Ret	1	Ret	3	Ret	1	1	1	1	1	3	1	Ret	3	1	1	9	Ret	2	2	1	Ret	1	3	1	1	4	3	3	1	Ret	1	1	1	498
+3	M.Marquez	Ducati	Gresini Racing MotoGP	5	4	2	16	2	Ret	6	2	2	2	2	3	2	4	Ret	10	6	2	Ret	4	Ret	4	1	1	5	1	4	3	3	Ret	3	3	2	1	4	11	2	12	7	2	392
+4	Bastianini	Ducati	Ducati Lenovo Team	6	5	6	2	6	3	Ret	5	4	4	5	18	Ret	2	4	3	4	4	1	1	4	3	7	5	4	3	3	1	2	Ret	2	4	3	5	1	14	3	3	2	7	386
+5	Binder	KTM	Red Bull KTM Factory Racing	2	2	Ret	4	12	9	Ret	6	15	8	Ret	8	6	10	6	6	8	9	4	Ret	7	5	6	4	7	4	6	19	13	8	Ret	6	Ret	7	9	6	7	DNS	9	6	217
+6	Acosta	KTM	Red Bull GasGas Tech3	8	9	7	3	4	2	2	10	6	Ret	3	13	3	5	10	Ret	22	7	5	9	10	13	3	3	6	17	5	Ret	6	2	Ret	Ret	Ret	DNS	Ret	3	9	5	Ret	10	215
+7	Vinales	Aprilia	Aprilia Racing	9	10	1	Ret	1	1	Ret	9	3	5	8	12	5	8	3	5	7	12	8	13	11	7	19	Ret	11	16	10	6	7	6	9	Ret	Ret	8	20	7	14	7	12	15	190
+8	A.Marquez	Ducati	Gresini Racing MotoGP	7	6	13	Ret	14	15	Ret	4	14	10	14	7	8	9	8	7	9	3	6	7	20	10	4	Ret	10	6	13	9	14	Ret	7	Ret	Ret	15	5	10	4	4	5	4	173
+9	Morbidelli	Ducati	Prima Pramac Racing	20	18	16	18	10	Ret	4	Ret	12	7	11	Ret	4	6	9	9	5	5	Ret	10	6	8	Ret	6	3	Ret	9	5	5	4	5	5	5	6	6	Ret	6	14	6	8	173
+10	Di Giannantonio	Ducati	Pertamina Enduro VR46 Racing Team	Ret	7	Ret	10	Ret	6	13	7	7	6	6	5	7	7	5	4	12	Ret	9	5	DNS	DNS	15	8	Ret	9	18	14	9	Ret	6	8	7	4	8	4	DNP	DNP	DNP	DNP	165
+11	A.Espargaro	Aprilia	Aprilia Racing	3	8	8	8	5	7	Ret	Ret	5	9	1	4	9	11	Ret	DNS	WD	WD	3	6	3	9	Ret	10	12	Ret	12	8	16	Ret	Ret	9	8	16	15	9	12	13	4	5	163
+12	Bezzecchi	Ducati	Pertamina Enduro VR46 Racing Team	11	14	11	6	13	8	Ret	3	Ret	Ret	9	11	11	13	11	Ret	10	8	Ret	8	8	6	10	7	Ret	5	8	4	4	5	10	7	Ret	19	7	Ret	10	9	8	9	153
+13	Quartararo	Yamaha	Monster Energy Yamaha MotoGP Team	12	11	9	7	15	12	5	15	10	Ret	10	9	Ret	18	7	12	13	11	11	11	12	18	8	Ret	9	7	7	7	12	7	12	12	11	9	10	16	5	6	10	11	113
+14	Miller	KTM	Red Bull KTM Factory Racing	10	21	5	5	7	13	14	Ret	8	Ret	7	Ret	12	16	13	11	11	13	7	12	5	19	13	15	8	8	14	16	11	Ret	8	10	Ret	11	11	5	8	DNS	19	13	87
+15	Oliveira	Aprilia	Trackhouse Racing	13	15	12	9	11	11	8	8	11	Ret	Ret	10	Ret	14	12	15	2	6	10	Ret	13	12	5	Ret	15	11	11	10	DNP	DNS	DNP	DNP	DNP	DNP	DNP	DNP	DNP	DNP	18	12	75
+16	R.Fernandez	Aprilia	Trackhouse Racing	14	Ret	10	Ret	9	10	12	11	9	11	Ret	6	10	12	17	8	14	10	12	Ret	14	Ret	11	16	17	18	17	13	19	10	11	15	6	10	14	Ret	18	16	14	18	66
+17	Zarco	Honda	Castrol Honda LCR	16	12	Ret	15	Ret	Ret	11	Ret	13	12	Ret	16	15	19	16	13	17	17	14	14	15	21	Ret	13	13	12	16	15	8	9	14	11	Ret	12	12	8	Ret	11	11	14	55
+18	Rins	Yamaha	Monster Energy Yamaha MotoGP Team	17	16	Ret	13	16	Ret	15	13	Ret	15	12	20	13	15	19	Ret	DNP	DNP	DNS	DNS	Ret	16	17	9	19	19	DNP	DNS	16	11	16	16	12	13	17	Ret	11	8	16	21	31
+19	Nakagami	Honda	Idemitsu Honda LCR	19	19	17	14	Ret	Ret	10	14	16	14	13	14	16	Ret	18	16	18	14	17	15	16	14	14	11	20	13	19	17	17	12	Ret	13	14	18	18	13	17	Ret	17	17	31
+20	A.Fernandez	KTM	Red Bull GasGas Tech3	18	17	15	11	Ret	14	7	Ret	17	13	17	Ret	17	Ret	15	14	16	16	13	16	Ret	15	12	12	16	Ret	20	18	16	Ret	15	Ret	9	17	16	Ret	13	10	20	19	27

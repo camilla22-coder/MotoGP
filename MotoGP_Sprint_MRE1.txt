@@ -1,0 +1,11 @@
+	S.THA	S.ARG	S.AME	S.QAT	S.SPA	S.FRA	S.GBR	S.ARA	S.ITA	S.NED	S.GER	S.CZE	S.AUT	S.HUN	S.CAT	S.RSM	S.JPN	S.INA	S.AUS	S.MAL	S.POR	S.VAL
+M.Marquez	1	1	1	1	1	1	2	1	1	1	1	1	1	1	1	Ret	2	6	DNP	DNP	DNP	DNP
+A.Marquez	2	2	2	2	2	2	1	2	2	2	8	17	2	8	Ret	2	10	4	6	2	1	1
+Bezzecchi	12	6	10	9	8	17	4	8	6	3	2	4	4	7	Ret	1	Ret	1	1	6	3	5
+Acosta	6	9	7	11	10	19	8	5	Ret	9	9	2	3	17	4	5	3	Ret	3	3	2	2
+Bagnaia	3	3	3	8	3	NC	6	12	3	5	12	7	Ret	13	14	13	1	14	19	1	8	14
+Di_Giannantonio	Ret	5	4	6	6	7	3	6	5	4	4	Ret	8	2	3	3	13	8	5	10	5	3
+Morbidelli	5	7	5	3	4	15	11	4	7	8	Ret	DNP	14	3	Ret	4	5	7	15	4	15	6
+Aldeguer	13	19	11	4	5	3	14	3	9	7	10	14	6	5	Ret	6	11	2	15	7	6	11
+Quartararo	7	10	6	5	Ret	4	7	11	10	Ret	3	5	11	Ret	2	Ret	6	Ret	7	5	4	7
+R.Fernandez	11	16	17	12	16	10	19	10	8	Ret	13	6	Ret	11	11	9	8	3	2	13	DNS	4
